@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: "Playwrite HR Lijeva", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 53, 243, 0.05);
+    
+}
+
+.topDropBar {
+    text-align: center;
+    color: black; 
+    height: 4.5rem; 
+    width: 100%;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black; 
+}
+.brandName {
+    display: inline-block; 
+    background: linear-gradient(90deg, 
+    rgb(52, 160, 164),rgb(24, 53, 243), rgb(161, 9, 161));
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center; 
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+p{
+    font-family: "Playfair Display", serif;
+    font-size: 0.7rem;
+    text-align: start;
+    padding-left: 8px;
+}
+
+h2 {
+    text-align: center; 
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(20deg, 
+    rgb(52, 160, 164, 0.3),rgb(24, 53, 243, 0.2), rgb(161, 9, 161, 0.2));
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+h2 a{
+    text-decoration: none;
+    color: white;
+    text-decoration-line: none;
+}
+
+.recipes-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    gap: 1px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Center-align items horizontally */
+    text-align: center; 
+    padding: 10px;
+    width: 200px; /* Ensure consistent width for recipes */
+    min-height: 300px;
+}
+.recipe p{
+    margin: 10px 0;
+    flex: 1; 
+}
+.recipe img {
+    width: 100%;
+    border-radius: 10px;
+}
+ .recipe button{
+    align-self: stretch; /* Makes buttons consistent in width */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    padding: 5px;
+    font-family:"Playwrite HR Lijeva", cursive;
+    font-weight: 900;
+ 
+}
+
+.recipe button:hover {
+    background-color: rgb(210, 190, 239, 0.8);
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Dropdown Btn */
+.dropdown-button {
+    font-family: "Playwrite HR Lijeva", cursive;
+    position: relative;
+    color: rgb(52, 160, 164);
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0 7px;
+    background: none;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+  .dropdown-content {
+    border: 3px solid rgb(210, 190, 239, 0.8);
+    background-color: white;
+    text-align: center;
+    list-style: none;
+    display: none;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: absolute;
+    padding: 30px 20px;
+ 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    text-decoration: none;
+    color: black;
+  }
+  .dropdown-content li{
+    padding: 8px 0px;
+  }
+  .show {
+    display: block;
+  }
+/* Dropdown Btn Ends */
+
+
+/* Cart Section Beggins*/
+
+#cartButton{
+    color: #6930c3;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold; 
+    padding: 0px 7px;
+    border-radius:20px;
+    text-align: center; 
+    border: 2px solid transparent; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 0 10px; 
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+
+#cartWindow {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: white;
+    border: 3px solid rgb(210, 190, 239, 0.8);
+    padding: 30px 30px 37px 30px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+}
+
+.hidden-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.visible-overlay {
+    display: block;
+}
+
+#cartList {
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+}
+
+#cartList li {
+    margin-bottom: 10px; 
+}
+
+#cartList li button{
+    border-radius: 20px;
+}
+/* Cart Section Ends */
+footer{
+    background-color: rgb(187, 150, 246, 0.4);
+    padding: 10px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div p {
+    font-size: 0.9rem; 
+}
+.backToMain a{
+    text-decoration: none;
+    color: white;
+    font-family: "Playwrite HR Lijeva", cursive; 
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+.backToMain{
+    border: none;
+    padding: 10px 50px; 
+    background: linear-gradient(20deg, 
+    rgb(52, 160, 164, 0.3),rgb(24, 53, 243, 0.2), rgb(161, 9, 161, 0.2));
+}
+.buttonBack{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="otherDishes">
+        <h2>Other Dishes</h2>
+        <div class="recipes-row">
+            <div class="recipe">
+                <img src="images/redLentilChickpeas.jpg" alt="Lentil Chickpeas">
+                <p>Ingredients: red lentils, chickpeas, 1 tomato, tomato paste, kurkuma, 3 garlic, cumin, paprika, koriander, bay leaf, lemon juice, yougurt, oil. </p>
+                <button onclick="addToCart('Lentil Chickpeas')" style="position: relative;">
+                    To Cook!
+                    <svg width="100%" height="10" viewBox="0 5 100 10" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: -10px; left: 0;">
+                        <path d="M0,5 Q50,12 100,5 T100,5 Q50,-5 0,5" fill="blue" opacity="0.25" />
+                    </svg>
+                </button>
+            </div>
+            <div class="recipe">
+                <img src="images/beefPotatoSkillet.jpg" alt="Beef Potato Skillet">
+                <p>Ingredients: ground beef, 2 medium potato, taco seasoning, 1 onion, 1tbsp soy sauce, salt, pepper, 3tbsp bbq sauce, 1 garlic, oil, green onion, cheddar cheese.   </p>
+                <button onclick="addToCart('Beef Potato Skillet')" style="position: relative;">
+                    To Cook!
+                    <svg width="100%" height="10" viewBox="0 5 100 10" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: -10px; left: 0;">
+                        <path d="M0,5 Q50,12 100,5 T100,5 Q50,-5 0,5" fill="blue" opacity="0.25" />
+                    </svg>
+                </button>
+            </div>
+            <div class="recipe">
+                <img src="images/tomatoEggs.jpg" alt="Tomato Eggs">
+                <p>Ingredients: 3 eggs, 1 tomato, 1 red pepper bell, 1 onion, 4 grated garlic, olive oil, butter, 1tbsp sweet chilli sauce, greens, spices, salt, pepper </p>
+                <button onclick="addToCart('Tomato Eggs')" style="position: relative;">
+                    To Cook!
+                    <svg width="100%" height="10" viewBox="0 5 100 10" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: -10px; left: 0;">
+                        <path d="M0,5 Q50,12 100,5 T100,5 Q50,-5 0,5" fill="blue" opacity="0.25" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="buttonBack">
+        <button class="backToMain"><a href="index.html">Back to Main Page</a></button>
+    </div>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+</main>
+</body>
+</html>
+

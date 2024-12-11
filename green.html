@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section id="greens">
+    <h2>Green Dishes</h2>
+    <div class="recipes-row">
+        <div class="recipe">
+            <img src="images/zucchiniPancakes.jpg" alt="Zucchini Pancakes">
+            <p>Ingredients: zucchini one big, 3 eggs, 2 grated, lemons zest & juice, 1/3 cup spinach & dill & parsley, 2tbsp flour, 1/2tsp bicarb, 150g feta cheese. Sauce: lebnah, 2 garlic, cucumber, olive oil, dill, lemon juice, salt, pepper. </p>
+            <button onclick="addToCart('Zucchini Pancakes')" style="position: relative;">
+                To Cook!
+                <svg width="100%" height="10" viewBox="0 5 100 10" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: -10px; left: 0;">
+                    <path d="M0,5 Q50,12 100,5 T100,5 Q50,-5 0,5" fill="blue" opacity="0.25" />
+                </svg>
+            </button>
+        </div>
+        <div class="recipe">
+            <img src="images/bamiya.JPG" alt="Bamiya Tomato">
+            <p>Ingredients: fresh bamiya, 1 chopped onion, 1 green pepper chopped, tomato paste, cutted tomato, 1tsp sugar, 1tsp salt, 1tbsp pepper, thyme, 1 lemon, 1tbsp flour, water 1/4 cup, greeens chopped.</p>
+            <button onclick="addToCart('Bamiya Tomato')" style="position: relative;">
+                To Cook!
+                <svg width="100%" height="10" viewBox="0 5 100 10" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: -10px; left: 0;">
+                    <path d="M0,5 Q50,12 100,5 T100,5 Q50,-5 0,5" fill="blue" opacity="0.25" />
+                </svg>
+            </button>
+        </div>
+        <div class="recipe">
+            <img src="images/brocolliMacaroni.jpg" alt="Broccoli Pasta">
+            <p>Ingredients: 250g broccolli, 300g flour, 2tsp salt. Sauce: 250g chikpeas, 2 grated garlic, 100g tomato paste, 200g pureed tomato, salt, pepper. Chopped basil, dill or parsley, parmesan  </p>
+            <button onclick="addToCart('Broccoli Pasta')" style="position: relative;">
+                To Cook!
+                <svg width="100%" height="10" viewBox="0 5 100 10" xmlns="http://www.w3.org/2000/svg" style="position: absolute; bottom: -10px; left: 0;">
+                    <path d="M0,5 Q50,12 100,5 T100,5 Q50,-5 0,5" fill="blue" opacity="0.25" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<div class="buttonBack">
+    <button class="backToMain"><a href="index.html">Back to Main Page</a></button>
+</div>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+</main>
+</body>
+</html>
+
