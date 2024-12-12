@@ -262,13 +262,13 @@ footer div p {
         font-size: 1rem;
         padding: 10px 10px; 
         border-radius: 30px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
     .dropdown-button{
         font-size: 0.8em;
         margin-right: 15px;
         line-height: 1.3em;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
     }
     #cartButton{
         font-size: 0.8rem;
