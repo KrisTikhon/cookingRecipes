@@ -40,6 +40,7 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 p{
     font-family: "Playfair Display", serif;
     font-size: 0.7rem;
@@ -54,8 +55,9 @@ h2 {
     background: linear-gradient(20deg, 
     rgb(52, 160, 164, 0.3),rgb(24, 53, 243, 0.2), rgb(161, 9, 161, 0.2));
     padding: 10px;
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
+    border-radius: 3px;
 }
 h2 a{
     text-decoration: none;
@@ -66,31 +68,33 @@ h2 a{
 .recipes-row {
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
-    width: 90%;
+    margin: 10px auto; 
+    width: 95%;
     gap: 1px;
+    padding: 0px;
 }
 
 .recipe {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: space-between; /* Distribute space evenly */
-    align-items: center; /* Center-align items horizontally */
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
     text-align: center; 
-    padding: 10px;
-    width: 200px; /* Ensure consistent width for recipes */
+    padding: 3px;
+    width: 200px;
     min-height: 300px;
 }
 .recipe p{
-    margin: 10px 0;
+    margin: 5px 0;
     flex: 1; 
+    line-height: 1em;
 }
 .recipe img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 3px;
 }
  .recipe button{
-    align-self: stretch; /* Makes buttons consistent in width */
+    align-self: stretch; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -99,6 +103,7 @@ h2 a{
     padding: 5px;
     font-family:"Playwrite HR Lijeva", cursive;
     font-weight: 900;
+    color: rgb(21, 20, 20);
  
 }
 
@@ -248,4 +253,45 @@ footer div p {
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .brandName {
+
+        text-align: center;
+        width: 40%; 
+        font-size: 1rem;
+        padding: 10px 10px; 
+        border-radius: 30px;
+        margin: px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .dropdown-button{
+        font-size: 0.8em;
+        margin-right: 15px;
+        line-height: 1.3em;
+    }
+    #cartButton{
+        font-size: 0.8rem;
+        line-height: 1.3em;
+        padding-bottom: 2px;
+    }
+    h2{
+        width: 93%; 
+        padding: 0.05em 0 0.3em 0;
+        margin: 10px auto;
+    }
+    h2 a{
+        font-size: 0.8em;
+    }
+    .recipe button{
+        margin-bottom: 1em;
+    }
+    .recipe p{
+        font-size: 0.6em;
+        width: 100%;
+        line-height: 0.9em;
+    }
+    img{
+        min-height: 180px;
+    }
 }
